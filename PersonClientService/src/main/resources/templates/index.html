@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Crud App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<form th:action="@{'/persons'}"
+      th:method="get">
+    <input type="text" name="personName" placeholder="Input person name"
+           class="form-control"><br>
+    <button type="submit" class="btn btn-success">Find person by name</button>
+</form>
+
+</body>
+</html>
